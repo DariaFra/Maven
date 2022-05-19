@@ -7,14 +7,29 @@
     <groupId>ru.geekbrains.lesson</groupId>
     <artifactId>first_project</artifactId>
     <version>1.0</version>
-    <packaging>pom</packaging>
+<!--    <packaging>pom</packaging>-->
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <jupiter.version>5.8.2</jupiter.version>
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -27,8 +42,6 @@
             <artifactId>webdrivermanager</artifactId>
             <version>5.1.1</version>
         </dependency>
-
-
 
     </dependencies>
 
